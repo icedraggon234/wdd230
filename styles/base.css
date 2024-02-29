@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: #9be6ff;
+    padding: 2rem;
+    font-size: 3rem;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, .75);
+}
+
+header span {
+    padding: 1rem;
+}
+
+
+nav {
+    background-color: rgb(80, 185, 150);
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.card p, .card ul{
+    padding: .5rem 1rem;
+}
+
+h1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, .75);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    background-color: #9be6ff;
+    font-weight: 400;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #9be6ff;
+    text-align: center;
+}
