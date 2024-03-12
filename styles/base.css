@@ -6,19 +6,41 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    --heading-color: #9be6ff;
+    --nav-color: #50b996;
+}
+
+body.dark {
+    background-color: #181a1b;
+    color: #e8e6e3;
+    --heading-color: #00536f;
+    --nav-color: #398d78;
+}
+
+body.dark .navList a {
+    color: black;
+}
+
+body.dark a.active {
+    color: #e8e6e3;
+}
+
+body.dark .card a {
+    color: #3391FF;
 }
 
 header {
-    background-color: #9be6ff;
+    background-color: var(--heading-color);
     padding: 2rem;
     font-size: 3rem;
     font-family: "Rubik", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-header img {
+#profileImage {
     box-shadow: 4px 5px 6px rgba(0, 0, 0, .75);
 }
 
@@ -26,9 +48,17 @@ header span {
     padding: 1rem;
 }
 
+#darkModeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
 
 nav {
-    background-color: #50b996;
+    background-color: var(--nav-color);
+    text-align: left;
 }
 
 ul {
@@ -43,12 +73,38 @@ nav a {
     padding: 1rem;
 }
 
-nav a:hover {
+nav .navList a:hover {
     background-color: rgba(255, 255, 255, .3);
+    color: black;
 }
 
 .active {
     background-color: rgba(0, 0, 0, .2);
+}
+
+#hamburgerMenuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    padding: 0.2rem 0.3rem;
+}
+
+#hamburgerMenuButton::before {
+    content: "\2630";
+}
+
+#hamburgerMenuButton.open::before {
+    content: "X";
+}
+
+.navList {
+    display: none;
+}
+
+.open {
+    display: block;
 }
 
 main {
@@ -78,14 +134,14 @@ h1 {
 }
 
 h2 {
-    background-color: #9be6ff;
+    background-color: var(--heading-color);
     font-weight: 400;
     padding: 0.5rem;
     text-align: center;
 }
 
 footer {
-    background-color: #9be6ff;
+    background-color: var(--heading-color);
     text-align: center;
     padding: 0.1rem;
 }

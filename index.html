@@ -23,13 +23,15 @@
 <body>
 
     <header>
-        <img src="images/profile.jpg" alt="Jared Reynolds" height="175">
+        <img id="darkModeButton" src="images/dark-mode-button.svg" alt="dark mode button" height="44">
+        <img id="profileImage" src="images/profile.jpg" alt="Jared Reynolds" height="175">
         <span>
             Jared Reynolds
         </span>
     </header>
     <nav>
-        <ul>
+        <button id="hamburgerMenuButton"></button>
+        <ul class="navList">
             <li><a href="" class="active">Home</a></li>
             <li><a href="">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
@@ -61,6 +63,8 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 
 </html>

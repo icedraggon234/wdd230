@@ -14,10 +14,15 @@
         grid-column: 1 / 3;
     }
 
-    nav ul {
+    nav ul.navList {
         display: flex;
     }
+
     nav ul li {
         flex: 1 1 100%;
+    }
+
+    #hamburgerMenuButton {
+        display: none;
     }
 }
