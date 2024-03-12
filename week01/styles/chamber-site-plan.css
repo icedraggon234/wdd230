@@ -13,19 +13,7 @@ header {
     padding: 2rem;
     font-size: 3rem;
     font-family: "Rubik", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-
-header img {
-    box-shadow: 4px 5px 6px rgba(0, 0, 0, .75);
-}
-
-header span {
-    padding: 1rem;
-}
-
 
 nav {
     background-color: #50b996;
@@ -64,7 +52,7 @@ main {
     margin: 1rem 0;
 }
 
-.card p, .card ul{
+.card p, .card img {
     padding: .5rem 1rem;
 }
 
@@ -72,9 +60,9 @@ h1 {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-style: italic;
+    font-size: 3rem;
     text-align: center;
     border-bottom: 2px solid rgba(0, 0, 0, .75);
-    margin-bottom: 1rem;
 }
 
 h2 {
@@ -82,10 +70,4 @@ h2 {
     font-weight: 400;
     padding: 0.5rem;
     text-align: center;
-}
-
-footer {
-    background-color: #9be6ff;
-    text-align: center;
-    padding: 0.1rem;
 }

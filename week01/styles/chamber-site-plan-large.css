@@ -1,0 +1,15 @@
+@media screen and (min-width: 500px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
