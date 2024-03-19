@@ -10,7 +10,7 @@
         gap: 1rem;
     }
 
-    h1 {
+    h1, .hero, iframe {
         grid-column: 1 / 3;
     }
 

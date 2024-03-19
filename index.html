@@ -24,7 +24,7 @@
 
     <header>
         <img id="darkModeButton" src="images/dark-mode-button.svg" alt="dark mode button" height="44">
-        <img id="profileImage" src="images/profile.jpg" alt="Jared Reynolds" height="175">
+        <img id="profileImage" src="images/profile.webp" alt="Jared Reynolds" height="175">
         <span>
             Jared Reynolds
         </span>
@@ -39,7 +39,14 @@
         </ul>
     </nav>
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <img src="images/hero-large.webp" alt="Washington D.C temple">
+            </picture>
+            <span>Washington D.C. Temple</span>
+        </div>
+            <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
             <ul>
@@ -54,17 +61,19 @@
         <section class="card">
             <h2>Information</h2>
             <p>The weather at the time of typing this is snowy</p>
-            <p>This page has been visited at least twice</p>
+            <p id="visitCount"></p>
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12609.860159003745!2d-112.02378346520774!3d40.51115862150931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1710880267785!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
-        <p><span id="year"></span> | Jared Reynolds | United states, Utah <img src="images/united-states-flag-icon.svg" alt="United states flag" height="15"></p>
+        <p><span id="year"></span> | Jared Reynolds | United states, Utah <img src="images/united-states-flag-icon.svg" alt="United states flag" height="15" loading="lazy"></p>
         <p id="lastModified"></p>
     </footer>
 
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visitCount.js"></script>
 </body>
 
 </html>

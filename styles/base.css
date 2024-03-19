@@ -113,6 +113,28 @@ main {
     padding: 0 1rem
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    padding: 0.5rem;
+    white-space: nowrap;
+    font-family: "Rubik", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
 .card {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -138,6 +160,10 @@ h2 {
     font-weight: 400;
     padding: 0.5rem;
     text-align: center;
+}
+
+iframe {
+    width: 100%;
 }
 
 footer {
