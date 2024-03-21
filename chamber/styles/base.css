@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    --heading-color: #9be6ff;
+    --nav-color: #50b996;
+    --h3-color: #b3fcff;
+}
+
+body.dark {
+    background-color: #181a1b;
+    color: #e8e6e3;
+    --heading-color: #00536f;
+    --nav-color: #398d78;
+    --h3-color: #005D61;
+}
+
+body.dark .navList a {
+    color: black;
+}
+
+body.dark a.active {
+    color: #e8e6e3;
+}
+
+header {
+    background-color: var(--heading-color);
+    padding: 2rem;
+    font-size: 3rem;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#logoImage {
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, .75);
+}
+
+header span {
+    padding: 1rem;
+}
+
+#darkModeButton {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    cursor: pointer;
+}
+
+
+nav {
+    background-color: var(--nav-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav .navList a:hover {
+    background-color: rgba(255, 255, 255, .3);
+    color: black;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#hamburgerMenuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    padding: 0.2rem 0.3rem;
+}
+
+#hamburgerMenuButton::before {
+    content: "\2630";
+}
+
+#hamburgerMenuButton.open::before {
+    content: "X";
+}
+
+.navList {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero a {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    color: black;
+    padding: 0.5rem;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-style: italic;
+    font-size: 1.75rem;
+    font-weight: 350;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.card p, .card h3 {
+    padding: .5rem 1rem;
+}
+
+div.card section {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+h3 { 
+    background-color: var(--h3-color);
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+h1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, .75);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    background-color: var(--heading-color);
+    font-weight: 400;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--heading-color);
+    text-align: center;
+    padding: 0.1rem;
+}
