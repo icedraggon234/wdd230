@@ -23,6 +23,25 @@
         grid-row: 3/5;
     }
 
+    #discover {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 2rem;
+    }
+
+    #discover .scenery img:hover {
+    box-shadow: 0 0 20px;
+    }
+
+    #discover div.sideBar {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #discover div.scenery {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
     nav ul.navList {
         display: flex;
     }

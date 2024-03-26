@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riverton Hills Chamber of Commerce</title>
+    <meta name="description" content="The Riverton Hills Chamber of Commerce home page.">
+    <meta name="author" content="Jared Reynolds">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Riverton Hills Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://icedraggon234.github.io/wdd230/chamber/images/hero-image-large.webp" />
+    <meta property="og:url" content="https://icedraggon234.github.io/wdd230/chamber" />
+</head>
+
+<body>
+    <header>
+        <img id="darkModeButton" src="images/dark-mode-button.svg" alt="dark mode button" height="44">
+        <img id="logoImage" src="images/logo-image.webp" alt="logo image">
+        <span>
+            Riverton Hills Chamber of Commerce
+        </span>
+    </header>
+    <nav>
+        <button id="hamburgerMenuButton"></button>
+        <ul class="navList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
+        </ul>
+    </nav>
+    <main id="discover">
+        <div class="sideBar card">
+            <h2>Riverton Hills Demographics</h2>
+            <section>
+                <h3>Location</h3>
+                <p>Situated in the beautiful sprawling valley and mountains of Riverton Hills.</p>
+            </section>
+            <section>
+                <h3>Population</h3>
+                <p>40,000+ residents share the valley with plentiful flora and fauna.</p>
+            </section>
+            <section>
+                <h3>Elevation</h3>
+                <p>4239ft.</p>
+            </section>
+            <section>
+                <h3>Weather</h3>
+                <p>Mornings expect colder weather with warmer afternoons and chilly evenings.</p>
+            </section>
+            <p id="visitMessage"></p>
+        </div>
+        <div class="scenery">
+            <h2>Scenery</h2>
+            <figure>
+                <img src="images/sceneryImage1.webp" alt="placeholder image" width="675" height="474" loading="lazy">
+                <figcaption>Riverton City Ski Resort </figcaption>
+            </figure>
+            <figure>
+                <img src="images/sceneryImage2.webp" alt="placeholder image" width="675" height="351" loading="lazy">
+                <figcaption>Holiday Center</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sceneryImage3.webp" alt="placeholder image" width="675" height="464" loading="lazy">
+                <figcaption>Squirrel Lake</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sceneryImage4.webp" alt="placeholder image" width="675" height="380" loading="lazy">
+                <figcaption>Redrock Point Overlook</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sceneryImage5.webp" alt="placeholder image" width="675" height="450" loading="lazy">
+                <figcaption>Metal Valley Farm</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sceneryImage6.webp" alt="placeholder image" width="675" height="448" loading="lazy">
+                <figcaption>Aventora Shopping Center</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>Riverton Hill Chamber of Commerce</p>
+        <p>123 Main Street, Riverton Hill, Utah</p>
+        <p>Email: info@rivertonhillchamber.com</p>
+        <p>Jared Reynolds</p>
+        <p>This is a fictitious site made for a project for the WDD230 course.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/getLastModifiedDate.js"></script>
+    <script src="scripts/pageVisitMessage.js"></script>
+</body>
+
+</html>

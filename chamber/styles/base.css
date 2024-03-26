@@ -135,7 +135,7 @@ main {
     font-weight: 350;
 }
 
-.card {
+.card, .scenery {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     overflow: hidden;
@@ -146,11 +146,55 @@ main {
     padding: .5rem 1rem;
 }
 
-div.card section {
+div.card section, div.scenery img {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     overflow: hidden;
     margin: 2rem;
+}
+
+#discover div.sideBar section {
+    margin: 1rem;
+}
+
+.scenery {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(230, 230, 230);
+}
+
+body.dark div.scenery {
+    background-color: #181a1b;
+}
+
+.scenery h2 {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+div.scenery img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 2rem;
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+
+figcaption {
+    position: absolute;
+    left: 33px;
+    bottom: 0;
+    font-size: smaller;
+    font-style: italic;
+}
+
+div.scenery figure:last-child {
+    margin-bottom: 1rem;
 }
 
 h3 { 
