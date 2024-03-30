@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Form</title>
+   <meta name="description" content="form website? (will update title and description later)">
+   <meta name="author" content="Jared Reynolds">
+   <link href="styles/normalize.css" rel="stylesheet">
+   <link href="styles/base.css" rel="stylesheet">
+   <link href="styles/larger.css" rel="stylesheet">
+   <link href="styles/form.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="darkModeButton" src="images/dark-mode-button.svg" alt="dark mode button" height="44">
+        <img id="profileImage" src="images/profile.webp" alt="Jared Reynolds" height="175">
+        <span>
+            Jared Reynolds
+        </span>
+    </header>
+    <nav>
+        <button id="hamburgerMenuButton"></button>
+        <ul class="navList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#" class="active">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p class="card">Thank you for applying to create an acount. Please check your email within an hour.</p>
+    </main>
+
+    <footer>
+        <p><span id="year"></span> | Jared Reynolds | United states, Utah <img src="images/united-states-flag-icon.svg" alt="United states flag" height="15" loading="lazy"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>
