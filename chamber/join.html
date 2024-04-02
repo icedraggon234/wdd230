@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riverton Hills Chamber of Commerce</title>
+    <meta name="description" content="The Riverton Hills Chamber of Commerce join page.">
+    <meta name="author" content="Jared Reynolds">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Riverton Hills Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://icedraggon234.github.io/wdd230/chamber/images/hero-image-large.webp" />
+    <meta property="og:url" content="https://icedraggon234.github.io/wdd230/chamber" />
+</head>
+
+<body>
+    <header>
+        <img id="darkModeButton" src="images/dark-mode-button.svg" alt="dark mode button" height="44">
+        <img id="logoImage" src="images/logo-image.webp" alt="logo image">
+        <span>
+            Riverton Hills Chamber of Commerce
+        </span>
+    </header>
+    <nav>
+        <button id="hamburgerMenuButton"></button>
+        <ul class="navList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+    </nav>
+    <main id="join">
+        <h1>Join Riverton Hills Chamber of Commerce</h1>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" id="lname" required></label>
+                <label>Position<input type="text" name="position" id="position" pattern="[a-zA-Z\-\s]{7,}" title="Must be at least 7 characters."></label>
+                <label>Email*<input type="email" name="email" id="email" placeholder="example@email.com" required></label>
+                <label>Phone Number*<input type="tel" name="telephone" id="telephone" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business</legend>
+                <label><input type="radio" name="membershipLevel" id="npMembership" value="npMembership">Non Profit Membership</label>
+                <label><input type="radio" name="membershipLevel" id="bronzeMembership" value="bronzeMembership">Bronze Membership</label>
+                <label><input type="radio" name="membershipLevel" id="silverMembership" value="silverMembership">Silver Membership</label>
+                <label><input type="radio" name="membershipLevel" id="goldMembership" value="goldMembership">Gold Membership</label>
+
+                <label>Give a brief description of your organization<textarea name="organizationDescription" id="organizationDescription" rows="3"></textarea></label>
+
+                <div class="card">
+                    <h3>Membership Levels</h3>
+                    <ol>
+                        <li>Non Profit Membership<p>Is for non profit organizations and there is no fee. </p></li>
+                        <li>Bronze Membership</li>
+                        <li>Silver Membership</li>
+                        <li>Gold Membership</li>
+                    </ol>
+                    <p>
+                        These memberships have increasing costs as well as increased
+                        benefits per level like trainings, advertising, event discounts, etc.
+                    </p>
+                </div>
+            </fieldset>
+
+            <input type="hidden" name="timestamp" id="timestamp" value="timestamp">
+            <input type="submit" value="Apply to Join">
+
+        </form>
+    </main>
+    <footer>
+        <p>Riverton Hill Chamber of Commerce</p>
+        <p>123 Main Street, Riverton Hill, Utah</p>
+        <p>Email: info@rivertonhillchamber.com</p>
+        <p>Jared Reynolds</p>
+        <p>This is a fictitious site made for a project for the WDD230 course.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/getLastModifiedDate.js"></script>
+    <script src="scripts/timestamp.js"></script>
+</body>
+
+</html>

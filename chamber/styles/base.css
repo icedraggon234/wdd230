@@ -9,6 +9,10 @@ body {
     --heading-color: #9be6ff;
     --nav-color: #50b996;
     --h3-color: #b3fcff;
+    --invalidFormColor: #cf3d3d;
+    --formLabelColor: #cf3d3d;
+    --formInputBackgroundColor: #eee;
+    --formInputTextColor: black;
 }
 
 body.dark {
@@ -17,6 +21,10 @@ body.dark {
     --heading-color: #00536f;
     --nav-color: #398d78;
     --h3-color: #005D61;
+    --invalidFormColor: #8C2323;
+    --formLabelColor:#d27373;
+    --formInputBackgroundColor: #222426;
+    --formInputTextColor: white;
 }
 
 body.dark .navList a {
@@ -142,7 +150,7 @@ main {
     margin: 1rem 0;
 }
 
-.card p, .card h3 {
+.card p, .card h3, .card ol {
     padding: .5rem 1rem;
 }
 
@@ -195,6 +203,94 @@ figcaption {
 
 div.scenery figure:last-child {
     margin-bottom: 1rem;
+}
+
+#join, #thankYou {
+    display: block;
+    max-width: 700px;
+}
+
+#join h1 {
+    margin-bottom: 3rem;
+}
+
+#join form {
+    box-shadow: 0 0 5px var(--formInputTextColor);
+    border-radius: 6px;
+    padding: 0.5rem 2%;
+    text-align: left;
+}
+
+#join fieldset {
+    margin: auto 1rem;
+    border-radius: 5px;
+    padding-right: 1.25rem;
+}
+
+#join form fieldset:first-child {
+    margin: 0.5rem 1rem 1rem;
+}
+
+#join legend {
+    padding: 0.5rem;
+}
+
+#join label, #join input[type="submit"] {
+    display: block;
+    color: var(--formLabelColor);
+    font-size: 0.9rem;
+    margin: 0.75rem 0.5rem 2rem;
+}
+
+#join input[type="text"],
+#join input[type="email"],
+#join input[type="tel"],
+#join input[type="submit"],
+#join textarea {
+    background-color: var(--formInputBackgroundColor);
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: var(--formInputTextColor);
+    width: 100%;
+    max-width: 400px;
+}
+
+#join input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+#join ol {
+    list-style-position: inside;
+}
+
+#join ol li {
+    padding: 0.25rem 0;
+}
+
+#join input[type="submit"] {
+    background-image: linear-gradient(var(--formInputBackgroundColor), var(--formLabelColor));
+    color: var(--formInputTextColor);
+    margin: 1rem auto 2rem;
+}
+
+#join input[type="submit"]:hover {
+    box-shadow: 0 0 20px var(--formInputTextColor);
+}
+
+#join input:required {
+    border-left: 10px solid var(--invalidFormColor);
+}
+
+#join input:required:valid {
+    border-left: 10px solid var(--nav-color);
+}
+
+#thankYou p {
+    margin: 1.5rem;
+    font-size: large;
+    white-space: pre-line;
 }
 
 h3 { 
