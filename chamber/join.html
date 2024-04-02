@@ -45,13 +45,15 @@
                 <legend>Personal Information</legend>
                 <label>First Name*<input type="text" name="fname" id="fname" required></label>
                 <label>Last Name*<input type="text" name="lname" id="lname" required></label>
-                <label>Position<input type="text" name="position" id="position" pattern="[a-zA-Z\-\s]{7,}" title="Must be at least 7 characters."></label>
+                <label>Position<input type="text" name="position" id="position" pattern="[a-zA-Z\-\s]{7,}" title="Must be at least 7 characters, no numbers or special characters, hyphens and spaces allowed."></label>
                 <label>Email*<input type="email" name="email" id="email" placeholder="example@email.com" required></label>
                 <label>Phone Number*<input type="tel" name="telephone" id="telephone" required></label>
             </fieldset>
 
             <fieldset>
                 <legend>Business</legend>
+                <label>Organization Name<input type="text" name="organizationName" id="organizationName" required></label>
+
                 <label><input type="radio" name="membershipLevel" id="npMembership" value="npMembership">Non Profit Membership</label>
                 <label><input type="radio" name="membershipLevel" id="bronzeMembership" value="bronzeMembership">Bronze Membership</label>
                 <label><input type="radio" name="membershipLevel" id="silverMembership" value="silverMembership">Silver Membership</label>
