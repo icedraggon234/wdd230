@@ -1,0 +1,43 @@
+{
+    "familyName": "Hayes",
+    "dateMovedIn": "April 12th, 2017",
+    "numberOfPeople": 7,
+    "bishopricVisit": true,
+    "members": [
+        {
+            "name": "Benjamin",
+            "gender": "Male",
+            "birthDate": "August 15, 1980"
+        },
+        {
+            "name": "Emily",
+            "gender": "Female",
+            "birthDate": "March 22, 1982"
+        },
+        {
+            "name": "Sophia",
+            "gender": "Female",
+            "birthDate": "November 5, 2005"
+        },
+        {
+            "name": "Ethan",
+            "gender": "Male",
+            "birthDate": "July 10, 2008"
+        },
+        {
+            "name": "Lily",
+            "gender": "Female",
+            "birthDate": "Female"
+        },
+        {
+            "name": "Noah",
+            "gender": "Male",
+            "birthDate": "May 17, 2014"
+        },
+        {
+            "name": "Lucas",
+            "gender": "Male",
+            "birthDate": "September 8, 2018"
+        }
+    ]
+}
