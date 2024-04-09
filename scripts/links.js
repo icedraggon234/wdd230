@@ -1,7 +1,5 @@
 const linksUlElement = document.querySelector("#links");
 const baseURL = "https://icedraggon234.github.io/wdd230/";
-// const baseURL = "http://127.0.0.1:5500/";
-// const linksURL = "http://127.0.0.1:5500/data/links.json";
 const linksURL = "https://icedraggon234.github.io/wdd230/data/links.json"
 
 linksUlElement.innerHTML = "";
