@@ -146,6 +146,17 @@ main {
     padding: .5rem 1rem;
 }
 
+#weather {
+    display: flex;
+    align-items: center;
+}
+
+#visitCount {
+    margin-top: -1rem;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+}
+
 h1 {
     font-family: "Rubik", sans-serif;
     font-weight: 400;

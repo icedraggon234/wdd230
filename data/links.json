@@ -1,0 +1,97 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "title": "Holy Grail",
+                    "url": "week01/holygrail.html"
+                },
+                {
+                    "title": "Media Query",
+                    "url": "week01/media-query.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "title": "Web Design",
+                    "url": "week02/design.html"
+                },
+                {
+                    "title": "Responsive Menu",
+                    "url": "https://codepen.io/icedraggon234/pen/mdgJMzb"
+                },
+                {
+                    "title": "Dom Manipulation",
+                    "url": "week02/bom.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "title": "WebP",
+                    "url": "week03/images/landscape.webp"
+                },
+                {
+                    "title": "Lazy Load",
+                    "url": "week03/lazyload.html"
+                },
+                {
+                    "title": "Responsive Images",
+                    "url": "week03/responsive-images.html"
+                },
+                {
+                    "title": "Local Storage",
+                    "url": "week03/bom.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "title": "CSS Pseudo-classes",
+                    "url": "https://codepen.io/icedraggon234/pen/ZEZyjmE"
+                },
+                {
+                    "title": "CSS Combinators",
+                    "url": "week04/images/CSSCombinators.png"
+                },
+                {
+                    "title": "Tables",
+                    "url": "week04/tablebuild.html"
+                },
+                {
+                    "title": "Form Start",
+                    "url": "week04/form-start/Form-start/index.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "title": "Pseudo-elements",
+                    "url": "https://codepen.io/icedraggon234/pen/NWmwEwj"
+                },
+                {
+                    "title": "JSON File",
+                    "url": "week05/new-ward-members.json"
+                },
+                {
+                    "title": "Prophets",
+                    "url": "week05/prophets.html"
+                },
+                {
+                    "title": "Weather API",
+                    "url": "week05/weather.html"
+                }
+            ]
+        }
+    ]
+}
